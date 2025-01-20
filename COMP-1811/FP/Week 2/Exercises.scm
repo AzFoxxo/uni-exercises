@@ -77,3 +77,12 @@
 
 (is_triangle 9 3 2)
 (is_triangle 3 3 3)
+
+; Return largest number of three
+(define return_largest_number
+  (lambda (x y z)
+    (car (sort (list x y z) >))
+   )
+)
+
+(return_largest_number 2 5 0)
