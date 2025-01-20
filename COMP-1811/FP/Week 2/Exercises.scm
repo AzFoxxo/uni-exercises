@@ -26,7 +26,6 @@
 ; Return three lowest values in a list
 (define func2
     (lambda (lst)
-        ; (sort lst <)
         ; On the sorted list, get the first three elements
         (let ((sorted-lst (sort lst <)))
             (list (car sorted-lst) (car (cdr sorted-lst)) (car (cdr (cdr sorted-lst))))
