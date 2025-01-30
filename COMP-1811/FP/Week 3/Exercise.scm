@@ -1,11 +1,16 @@
 ; Add one to each item in the list
 (define increment-list
-    (lambda (lst)
-        (map (lambda (n) (+ n 1)) lst)
+  (lambda (lst)
+    (if (null? lst)
+        '()
+        (cons (+ (car lst) 1)
+              (increment-list (cdr lst))
         )
-    )
+      )
+   )
+)
 
-(add-one-to-list '(1 2 3 4))
+(increment-list '(1 2 3 4))
 
 ; Reduplicate list N times
 (define list-of
