@@ -28,7 +28,7 @@
 
 ;; Exercise 1
 (define (coded-message x)
-  (map (lambda (y) (integer->char (- (char->integer y) 1))) x))
+  (map (lambda (y) (integer->char (- (char->integer y) 3))) x))
 
 ;;Exercise 2
 (define (how-many-scored-zero grades)
